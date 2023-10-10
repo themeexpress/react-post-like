@@ -27,7 +27,7 @@ function App() {
           <div className='card-header'>
             <BiUserCircle/> User Name
           </div>
-          <img src={imageUrl} alt='post-img' height={"300px"} width="100%"/>
+          <img src={imageUrl} alt='post-img' height={"300px"} width="100%" onDoubleClick={handleLikes}/>
           <div className='card-footer'>
             { like ? <AiFillHeart size={25} className="text-danger" onClick={handleLikes} style={{cursor: 'pointer'}}/> : <AiOutlineHeart size={25} onClick={handleLikes}/> }
             &nbsp;
